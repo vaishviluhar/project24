@@ -16,6 +16,6 @@ class Paper{
         var pos = this.body.position;
         rectMode(CENTER);
         fill(255);
-        circle(pos.x, pos.y, this.width, this.height);
+        circle(pos.x, pos.y, this.radius);
       }
 }
