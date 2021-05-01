@@ -1,4 +1,4 @@
-var rect1, rec2, rec3;
+var rect1, rect2, rect3;
 var ball;
 var world;
 const Engine = Matter.Engine;

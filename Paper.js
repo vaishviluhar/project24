@@ -7,15 +7,14 @@ class Paper{
             density : 1.2
         }
 
-        this.body = Matter.Bodies.circle(x, y, radius);
+        this.body = ellipse(x, y, radius, radius);
         this.radius = radius;
         World.add(world, this.body);
     }
 
     display(){
-        var pos = this.body.position;
         rectMode(CENTER);
         fill(255);
-        circle(pos.x, pos.y, this.radius);
+        ellipse(this.body.position.x, this.body.position.y, this.radius, this.radius);
       }
 }
