@@ -1,6 +1,7 @@
 var rect1, rect2, rect3;
 var ball;
 var world;
+var ground;
 const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
@@ -31,6 +32,8 @@ function setup() {
     rect3 = new Dustbin(500, 610, 20, 100);
 
     ball = new Paper(20, 680, 10);
+
+    ground = new Ground(400, 350, 800, 700);
 
 	Engine.run(engine);
   
